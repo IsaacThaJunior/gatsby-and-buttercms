@@ -54,7 +54,11 @@ const Items = () => {
   ];
 
   return (
-    <div className="flex px-8 bg-amber-50 py-12">
+    <div className="flex px-8 bg-amber-50 py-12 flex-col">
+      <h1 className="flex justify-center uppercase text-4xl text-green-600 pb-8 font-bold">
+        Our products
+      </h1>
+
       <div className="items-container w-full flex flex-wrap justify-center">
         {blogs.map((blog) => (
           <div
@@ -71,8 +75,6 @@ const Items = () => {
       </div>
     </div>
   );
-
-  // return <div className="flex justify-between">I am a girl</div>;
 };
 
 export default Items;
