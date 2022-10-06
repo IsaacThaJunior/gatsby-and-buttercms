@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { useState } from "react";
 import pic1 from "../images/gadget1.jpeg";
 import pic2 from "../images/gadget2.jpeg";
 import pic3 from "../images/gadget3.jpeg";
@@ -54,15 +53,15 @@ const Items = () => {
   ];
 
   return (
-    <div className="flex px-8 bg-amber-50 py-12 flex-col">
+    <div className="flex px-8 bg-amber-50 py-24 flex-col">
       <h1 className="flex justify-center uppercase text-4xl text-green-600 pb-8 font-bold">
         Our products
       </h1>
 
-      <div className="items-container w-full flex flex-wrap justify-center">
+      <div className="items-container w-full flex flex-wrap justify-center lg:w-full xl:w-3/4 xl:m-auto">
         {blogs.map((blog) => (
           <div
-            className="px-1 bg-amber-100 m-5 pt-5 pb-10 w-96 flex flex-col items-center rounded-md hover:bg-amber-200"
+            className="px-1 bg-amber-100 m-5 pt-5 pb-10 w-96 flex flex-col items-center rounded-md hover:bg-yellow-100 hover:shadow-sm hover:-translate-y-1 transition-all duration-300"
             key={blog.id}
           >
             <img className="self-stretch" src={blog.imgSrc} />
