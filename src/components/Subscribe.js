@@ -16,7 +16,7 @@ const Subscribe = () => {
           type="email"
           placeholder="Enter your email"
         />
-        <button className="bg-green-500 text-white rounded-md p-2 w-40 md:w-32 m-auto">
+        <button className="bg-green-500 text-white rounded-md p-2 w-40 md:w-32 m-auto hover:-translate-y-1 transition-all duration-300">
           Subscribe
         </button>
       </div>
