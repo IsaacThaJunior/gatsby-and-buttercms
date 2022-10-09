@@ -1,5 +1,5 @@
 import * as React from "react";
-import icon from "/public/static/banknote.svg";
+import icon from "../images/banknote.svg";
 
 const Features = () => {
   const feats = [
