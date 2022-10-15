@@ -53,17 +53,16 @@ const Contact = () => {
             <li className="flex items-start mb-6">
               <img className="mr-2" src={locationIcon} alt="location" />
               <p>
-                Isaac's house, Bema Gradens, First Mechanic Road, Alakahia,
-                Choba, Port-Harcourt
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut saepe rerum architecto molestias. Beatae veniam perferendis, quisquam recusandae hic necessitatibus ullam perspiciatis amet maiores repellendus nesciunt laudantium laborum eos facere eveniet voluptas quis culpa. Itaque eius labore maiores, fuga consectetur excepturi debitis fugiat, dicta illum saepe aliquam error tempore harum ullam non ipsam amet accusantium recusandae ratione voluptatem sequi aliquid?
               </p>
             </li>
             <li className="flex mb-6">
               <img className="mr-2" src={emailIcon} alt="email" />
-              <p>Kenebebhwork@email.com</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, perspiciatis!</p>
             </li>
             <li className="flex mb-6">
               <img className="mr-2" src={phoneIcon} alt="phone" />
-              <p>09069312305</p>
+              <p>678272739813773</p>
             </li>
             <li className="flex mb-6">
               <img className="mr-2" src={faxIcon} alt="fax" />

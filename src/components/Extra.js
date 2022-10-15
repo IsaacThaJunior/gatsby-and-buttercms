@@ -38,12 +38,12 @@ const Extra = () => {
             className="px-0 bg-amber-100 m-5 pt-0 pb-10 w-96 flex flex-col items-center rounded-lg overflow-hidden hover:bg-amber-200 hover:-translate-y-1 transition-all duration-300"
             key={offer.id}
           >
-            <img className="self-stretch" src={offer.imgSrc} />
+            <img className="self-stretch" src={offer.imgSrc} alt='' />
             <h2 className="text-xl text-green-600 uppercase m-2 font-bold text-center">
               {offer.title}
             </h2>
             <p className="text-lg italic px-3 text-center mt-3">
-              {offer.body}{" "}
+              {offer.body}
             </p>
           </div>
         ))}

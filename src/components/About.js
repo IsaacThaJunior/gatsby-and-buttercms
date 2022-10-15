@@ -1,5 +1,6 @@
 import * as React from "react";
 import image from "../images/coding.jpeg";
+import { Link } from "gatsby";
 
 const About = () => {
   return (
@@ -31,9 +32,9 @@ const About = () => {
             reprehenderit.
           </p>
           <button className="bg-green-600 text-white rounded-md p-3 hover:-translate-y-0.5 hover:scale-105 transition-all duration-300">
-            <a className="" href="#">
+            <Link to="#">
               Join us
-            </a>
+            </Link>
           </button>
         </div>
       </div>

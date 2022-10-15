@@ -64,7 +64,7 @@ const Items = () => {
             className="px-1 bg-amber-100 m-5 pt-5 pb-10 w-96 flex flex-col items-center rounded-md hover:bg-yellow-100 hover:shadow-sm hover:-translate-y-1 transition-all duration-300"
             key={blog.id}
           >
-            <img className="self-stretch" src={blog.imgSrc} />
+            <img className="self-stretch" src={blog.imgSrc} alt='' />
             <h2 className="text-xl text-green-600 uppercase m-2 font-bold">
               {blog.title}
             </h2>
