@@ -1,32 +1,17 @@
 import * as React from "react";
-import pic1 from "../images/gadget1.jpeg";
-import pic2 from "../images/gadget5.jpeg";
-import pic3 from "../images/gadget6.jpeg";
+import axios from "axios";
 
-const URL = `https://api.buttercms.com/v2/content/features_collections?auth_token=${process.env.BUTTER_CMS_API_KEY}`;
+const URL = `https://api.buttercms.com/v2/content/extra?auth_token=${process.env.BUTTER_CMS_API_KEY}`;
 
 const Extra = () => {
-  const offers = [
-    {
-      title: "Software engineering internships",
-      body: "We offer Internships to students who are registered with us and complete our training programme and pass with flying colours",
-      id: 1,
-      imgSrc: pic1,
-    },
-    {
-      title: "Mentorship programmes",
-      body: "As a techie, you may often be confused, need some profesional guidance or perhaps someone to teach you about the real-world dev life. Enroll in our mentorship programme today!",
-      id: 2,
-      imgSrc: pic2,
-    },
-    {
-      title: "Councelling",
-      body: "We offer career and mental to anyone who needs it for no cost at all. E no easy to live for Naija, and we understand. Book a councelling session now!",
-      author: "Kene",
-      id: 3,
-      imgSrc: pic3,
-    },
-  ];
+
+  const [datas, setDatas] = React.useState([]);
+
+  React.useEffect(() => {
+    axios.get(URL).then((res) => {
+      setDatas(res?.data?.data?.extra);
+    });
+  }, []);
 
   return (
     <div className="flex px-8 bg-amber-50 py-24 flex-col">
@@ -35,17 +20,17 @@ const Extra = () => {
       </h1>
 
       <div className="items-container w-full flex flex-wrap justify-center">
-        {offers.map((offer) => (
+        {datas.map((data) => (
           <div
             className="px-0 bg-amber-100 m-5 pt-0 pb-10 w-96 flex flex-col items-center rounded-lg overflow-hidden hover:bg-amber-200 hover:-translate-y-1 transition-all duration-300"
-            key={offer.id}
+            key={data.id}
           >
-            <img className="self-stretch" src={offer.imgSrc} alt='' />
+            <img className="self-stretch" src={data.imgSrc} alt='' />
             <h2 className="text-xl text-green-600 uppercase m-2 font-bold text-center">
-              {offer.title}
+              {data.title}
             </h2>
             <p className="text-lg italic px-3 text-center mt-3">
-              {offer.body}
+              {data.body}
             </p>
           </div>
         ))}

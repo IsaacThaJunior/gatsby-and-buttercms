@@ -1,5 +1,5 @@
 import * as React from "react";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 
 const Subscribe = () => {
   return (
@@ -24,12 +24,12 @@ const Subscribe = () => {
       <div className="m-12">
         <h2 className="text-2xl text-slate-800">
           Want to know more about us?
-          <a
+          <Link
             className="text-base ml-2 italic underline text-zinc-700"
-            href="../pages/about.js"
+            to="../pages/about.js"
           >
             Click here
-          </a>
+          </Link>
         </h2>
       </div>
     </div>
