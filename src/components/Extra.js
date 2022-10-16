@@ -3,6 +3,8 @@ import pic1 from "../images/gadget1.jpeg";
 import pic2 from "../images/gadget5.jpeg";
 import pic3 from "../images/gadget6.jpeg";
 
+const URL = `https://api.buttercms.com/v2/content/features_collections?auth_token=${process.env.BUTTER_CMS_API_KEY}`;
+
 const Extra = () => {
   const offers = [
     {
